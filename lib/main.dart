@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const CircleAvatar(
                 radius: 50.0,
@@ -37,52 +38,45 @@ class MyApp extends StatelessWidget {
                     color: Colors.teal.shade100,
                     letterSpacing: 2.5),
               ),
-              Container(
-                color: Colors.white,
-                margin: const EdgeInsets.symmetric(
-                    vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: [
-                    const Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                    ),
-                    const SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+925 4562 1478',
-                      style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.teal.shade900,
-                          fontFamily: 'SourceSansPro'),
-                    ),
-                  ],
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
                 ),
               ),
-              Container(
-                color: Colors.white,
+              Card(
                 margin: const EdgeInsets.symmetric(
                     vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal.shade900,
-                    ),
-                    const SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'emacaraig@kindercaring.com.au',
-                      style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.teal.shade900,
-                          fontFamily: 'SourceSansPro'),
-                    ),
-                  ],
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+925 4562 1478',
+                    style: TextStyle(
+                        fontSize: 18.0,
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSansPro'),
+                  ),
+                ),
+              ),
+              Card(
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal.shade900,
+                  ),
+                  title: Text(
+                    'emacaraig@kindercaring.com.au',
+                    style: TextStyle(
+                        fontSize: 18.0,
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSansPro'),
+                  ),
                 ),
               ),
             ],
