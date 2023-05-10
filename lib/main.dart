@@ -15,7 +15,19 @@ class MyApp extends StatelessWidget {
         primaryColor: const Color(0xFF0A0E21),
         scaffoldBackgroundColor: const Color(0xFF0A0E21),
       ),
-      home: BMIPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) {
+          return Topics();
+        },
+        '/bmi_calc': (context) {
+          return BMIPage();
+        },
+        '/dicee': (context) {
+          return DicePage();
+        }
+      },
+      // home: Topics(),
     );
   }
 }
