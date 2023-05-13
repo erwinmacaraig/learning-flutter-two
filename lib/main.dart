@@ -25,6 +25,9 @@ class MyApp extends StatelessWidget {
         },
         '/dicee': (context) {
           return DicePage();
+        },
+        '/clima': (context) {
+          return LoadingScreen();
         }
       },
       // home: Topics(),

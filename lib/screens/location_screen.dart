@@ -30,7 +30,7 @@ class _LocationScreenState extends State<LocationScreen> {
                 children: [
                   TextButton(
                     onPressed: () {},
-                    child: Icon(
+                    child: const Icon(
                       Icons.near_me,
                       size: 50.0,
                     ),
@@ -45,7 +45,7 @@ class _LocationScreenState extends State<LocationScreen> {
                   Padding(
                     padding: EdgeInsets.only(left: 15.0),
                     child: Row(
-                      children: [
+                      children: const [
                         Text(
                           '32',
                           style: kTempTextStyle,
@@ -57,7 +57,7 @@ class _LocationScreenState extends State<LocationScreen> {
                       ],
                     ),
                   ),
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.only(right: 15.0),
                     child: Text(
                       "It's 🍦 time in San Francisco!",

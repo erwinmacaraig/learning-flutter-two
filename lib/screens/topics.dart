@@ -17,7 +17,9 @@ class Topics extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/clima');
+            },
             child: const Text(
               'Clima - Live Web Data',
               style: kLargeButtonTextStyle,
@@ -29,7 +31,7 @@ class Topics extends StatelessWidget {
             },
             child: const Text(
               'BMI Calculator',
-              style: kLabelTextStyle,
+              style: kLargeButtonTextStyle,
             ),
           ),
           ElevatedButton(
@@ -38,7 +40,7 @@ class Topics extends StatelessWidget {
             },
             child: const Text(
               'Roll Dice',
-              style: kLabelTextStyle,
+              style: kLargeButtonTextStyle,
             ),
           ),
         ],
