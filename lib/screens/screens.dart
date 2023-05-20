@@ -9,3 +9,5 @@ export 'topics.dart';
 export 'loading_screen.dart';
 export 'city_screen.dart';
 export 'location_screen.dart';
+export 'tasks_screen.dart';
+export 'add_task_screen.dart';

@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
+        unselectedWidgetColor: Colors.black,
         primaryColor: const Color(0xFF0A0E21),
         scaffoldBackgroundColor: const Color(0xFF0A0E21),
       ),
@@ -28,6 +29,9 @@ class MyApp extends StatelessWidget {
         },
         '/clima': (context) {
           return LoadingScreen();
+        },
+        '/todoeey': (context) {
+          return TasksScreen();
         }
       },
       // home: Topics(),

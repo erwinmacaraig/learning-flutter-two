@@ -6,7 +6,7 @@ class Topics extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Topics',
           style: kTitleTextStyle,
         ),
@@ -16,6 +16,15 @@ class Topics extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/todoeey');
+            },
+            child: const Text(
+              'To Do App (State Management)',
+              style: kLargeButtonTextStyle,
+            ),
+          ),
           ElevatedButton(
             onPressed: () {
               Navigator.pushNamed(context, '/clima');
